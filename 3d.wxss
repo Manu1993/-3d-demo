@@ -1,0 +1,30 @@
+.light{
+     margin-top: 300rpx;
+      margin-left: 300rpx;
+        position:absolute;
+        perspective:500px;
+         /*距离屏幕的距离*/
+    }
+.stage{
+    position:relative;
+    /*声明为3d*/
+    transform-style:preserve-3d;
+    transition: all 0.8s;
+}
+.image1{
+     width: 64px;
+       height: 64px;
+    position:absolute;
+    transform:translateZ(50px) ;
+    transition: all 0.8s;
+}
+.image2{
+    width: 64px;
+       height: 64px;
+    position:absolute;
+    transition: all 0.8s;
+    transform: rotateX(-90deg) translateZ(50px);
+} 
+.stage:hover{
+    transform: rotateX(90deg);
+}
